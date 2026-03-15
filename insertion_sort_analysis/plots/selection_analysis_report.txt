@@ -1,0 +1,50 @@
+SELECTION SORT ANALYSIS REPORT
+==================================================
+
+Theoretical complexity:
+  Best case: O(n²)
+  Average case: O(n²)
+  Worst case: O(n²)
+  Memory: O(1)
+  Theoretical comparisons: n(n-1)/2 = 8.19e+09 for n=128000.0
+
+Experimental results:
+  Size  BestTime_ns  WorstTime_ns   AvgTime_ns  AvgSwaps  AvgComparisons      BigO_ns
+  1000 2.801800e+06  5.514600e+06 3.901625e+06    993.40        499500.0 3.901625e+06
+  2000 1.115030e+07  2.178110e+07 1.351368e+07   1992.10       1999000.0 2.613732e+07
+  4000 4.594910e+07  6.668790e+07 5.303801e+07   3990.80       7998000.0 8.002548e+07
+  8000 1.812646e+08  2.266241e+08 1.961622e+08   7991.60      31996000.0 2.719489e+08
+ 16000 7.296708e+08  8.396146e+08 7.564999e+08  15990.40     127992000.0 1.007538e+09
+ 32000 2.974916e+09  3.079538e+09 3.018212e+09  31989.10     511984000.0 3.695445e+09
+ 64000 1.137606e+10  1.205036e+10 1.157175e+10  63989.05    2047968000.0 1.446043e+10
+128000 4.489652e+10  5.200017e+10 4.595411e+10 127986.00    8191936000.0 6.240021e+10
+
+Complexity verification:
+
+Size 1000 -> 2000:
+  Size ratio: 2.00
+  Time ratio: 3.46
+
+Size 2000 -> 4000:
+  Size ratio: 2.00
+  Time ratio: 3.92
+
+Size 4000 -> 8000:
+  Size ratio: 2.00
+  Time ratio: 3.70
+
+Size 8000 -> 16000:
+  Size ratio: 2.00
+  Time ratio: 3.86
+
+Size 16000 -> 32000:
+  Size ratio: 2.00
+  Time ratio: 3.99
+
+Size 32000 -> 64000:
+  Size ratio: 2.00
+  Time ratio: 3.83
+
+Size 64000 -> 128000:
+  Size ratio: 2.00
+  Time ratio: 3.97
